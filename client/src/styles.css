@@ -1,0 +1,47 @@
+#app {
+  /* font-family: Cormorant; */
+}
+
+
+.breakLine {
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.container {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.info {
+  margin-left: 1vw;
+}
+
+.name {
+  font-size: 175%;
+  margin-bottom: 1vh;
+}
+
+.title {
+  font-size: 120%;
+  margin-bottom: 1vh;
+}
+
+.bio {
+  margin-bottom: 1vh;
+}
+
+.header_text {
+  font-size: 300%;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+  color: rgb(228, 148, 0);
+}
