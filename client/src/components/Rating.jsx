@@ -19,7 +19,7 @@ function Rating ({ getLikes, likes, employee }) {
     <div className="rating">
       <span className="bold">Want to work with {employee.name}?</span>
       <a className="like_button" onClick={addOrUpdateLikes}>
-        <img width="15px" src="/thumbs" />
+        <img className="thumb" width="15px" src="/thumbs" />
         YES!
       </a>
       <div> <span className="bold"> {likes} </span> people have said Yes!</div>

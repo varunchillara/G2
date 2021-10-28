@@ -8,8 +8,18 @@
   color: rgb(65, 147, 255);
 }
 
+.width100 {
+  max-width: 250px;
+  height: 250px;
+  width: auto;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.thumb {
+  margin-right: 2px;
 }
 
 .breakLine {
@@ -40,7 +50,7 @@
   margin-left: 1vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .name {

@@ -6,9 +6,9 @@ function Employee ({ getLikes, likes, employee }) {
     <>
       <div className="container">
         <div className="post">
-          <img width="250" height="250" src={employee['image_url']} />
+          <img className="width100" src={employee['image_url']} />
           <div className="info">
-            <div>
+            <div className="top">
               <div className="name">{employee.name}</div>
               <div className="title">{employee.title}</div>
             </div>
@@ -19,7 +19,6 @@ function Employee ({ getLikes, likes, employee }) {
       </div>
       <hr className="breakLine"/>
     </>
-
   )
 }
 
