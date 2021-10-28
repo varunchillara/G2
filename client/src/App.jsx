@@ -5,6 +5,14 @@ import Header from './components/Header.jsx';
 
 function App (props) {
   const [roster, setRoster] = useState([]);
+  const [likes, setLikes] = useState({});
+
+  const getLikes = () => {
+    axios.get('http://localhost:3000/likes')
+    .then(({ data }) => {
+      setLikes(data);
+    })
+  }
 
   useEffect(() => {
     axios.get('https://coding-assignment.g2crowd.com/')
@@ -13,10 +21,14 @@ function App (props) {
     })
   }, [])
 
+  useEffect(() => {
+    getLikes();
+  }, [roster])
+
   return (
     <div>
       <Header />
-      <Roster roster={roster} />
+      <Roster getLikes={getLikes} likes={likes} roster={roster} />
     </div>
     );
 }

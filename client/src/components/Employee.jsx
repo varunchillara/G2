@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
+import Rating from './Rating.jsx';
 
-function Employee ({ employee }) {
+function Employee ({ getLikes, likes, employee }) {
   return (
     <>
       <div className="container">
@@ -10,7 +11,7 @@ function Employee ({ employee }) {
             <div className="name">{employee.name}</div>
             <div className="title">{employee.title}</div>
             <div className="bio">{employee.bio}</div>
-            <div>Want to work with {employee.name}?</div>
+            <Rating getLikes={getLikes} likes={likes} employee={employee} />
           </div>
         </div>
       </div>
