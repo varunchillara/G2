@@ -5,7 +5,7 @@ function Roster ({ getLikes, likes, roster }) {
   return (
     <div>
       {roster.map((employee, i) => {
-        return (<Employee getLikes={getLikes} key={i} likes={likes[employee.name] || 0} employee={employee}/>);
+        return (<Employee key={i} getLikes={getLikes} likes={likes[employee.name] || 0} employee={employee}/>);
       })}
     </div>
   )

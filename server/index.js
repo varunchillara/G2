@@ -4,6 +4,8 @@ const port = 3000
 
 app.use(express.json());
 app.use(express.static(__dirname + "/../client/dist"));
+app.use('/thumbs', express.static(__dirname + "/../client/images/thumbs-up.svg"));
+
 
 const db = {};
 

@@ -8,8 +8,10 @@ function Employee ({ getLikes, likes, employee }) {
         <div className="post">
           <img width="250" height="250" src={employee['image_url']} />
           <div className="info">
-            <div className="name">{employee.name}</div>
-            <div className="title">{employee.title}</div>
+            <div>
+              <div className="name">{employee.name}</div>
+              <div className="title">{employee.title}</div>
+            </div>
             <div className="bio">{employee.bio}</div>
             <Rating getLikes={getLikes} likes={likes} employee={employee} />
           </div>

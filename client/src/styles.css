@@ -2,14 +2,30 @@
   /* font-family: Cormorant; */
 }
 
+.like_button {
+  margin-left: 1vw;
+  cursor: pointer;
+  color: rgb(65, 147, 255);
+}
+
+.bold {
+  font-weight: bold;
+}
 
 .breakLine {
   margin-right: 2vw;
   margin-left: 2vw;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.breakLine_ {
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 5vh;
 }
 
 .container {
-  height: 40vh;
   display: flex;
   align-items: center;
 }
@@ -22,6 +38,9 @@
 
 .info {
   margin-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .name {
