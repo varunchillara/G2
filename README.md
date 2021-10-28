@@ -8,6 +8,7 @@ G2 takehome project. A roster for G2 Crowd product team, with voting functionali
 These commands are used to run the project in a mac or linux environment.
  - Navigate to project's directory - `cd G2`
  - Insall dependencies - `npm install`
+ - **IF** `client/dist/bundle.js` does not exists run webpack - `npm run build-prod`
  - Start server - `npm run server`
  - Navigate to http://localhost:3000
 
