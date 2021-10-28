@@ -10,19 +10,31 @@ app.use('/thumbs', express.static(__dirname + "/../client/images/thumbs-up.svg")
 const db = {};
 
 app.get('/likes', (req, res) => {
-  res.status(200).send(db);
+  try {
+    res.status(200).send(db);
+  } catch (error) {
+    res.sendStatus(500);
+  }
 });
 
 app.post('/like', (req, res) => {
-  const name = req.body.name;
-  db[name] = 1;
-  res.sendStatus(201);
+  try {
+    const name = req.body.name;
+    db[name] = 1;
+    res.sendStatus(201);
+  } catch (error) {
+    res.sendStatus(500);
+  }
 });
 
 app.put('/like', (req, res) => {
-  const name = req.body.name;
-  db[name]++;
-  res.sendStatus(201);
+  try {
+    const name = req.body.name;
+    db[name]++;
+    res.sendStatus(201);
+  } catch (error) {
+    res.sendStatus(500);
+  }
 });
 
 app.listen(port, () => {
